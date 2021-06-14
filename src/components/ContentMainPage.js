@@ -138,7 +138,7 @@ class Content extends Component {
                   <div className="contentPage-container">
                     <form onSubmit={this.handleSubmit}>
                     {/* <Form className="mb-5"> */}
-                        <Row className="justify-content-md-center mb-2 height_40px">
+                        <Row className="justify-content-md-center mb-2 ">
                             <Col xs lg="3">
                                 <Form.Control type="original_url" name="original_url" placeholder="Paste URL..."></Form.Control>
                             </Col>
@@ -146,7 +146,7 @@ class Content extends Component {
                                 <Form.Check label="Enable logs" name="group1" type="checkbox" id="is_logging_enabled" onChange={() => this.loggingCheckClick('isCustomUrl')}></Form.Check>                                
                             </Col>   
                         </Row>                     
-                        <Row className="justify-content-md-center mb-2 height_40px">
+                        <Row className="justify-content-md-center mb-2 ">
                             <Col xs lg="3">
                                 { this.state.isCustomUrl ? (<Form.Control type="custom_short_url" name="custom_short_url" placeholder="url should start with => https://vakumar-urlshortner.netlify.app/?"></Form.Control>) : (<Form.Control type="custom_short_url" placeholder="Custom URL..." value={this.state.shortUrl} readOnly ></Form.Control>) }                                
                             </Col>  
@@ -154,7 +154,7 @@ class Content extends Component {
                                 <Form.Check label="Custom Url" name="group1" type="checkbox" id="custom_url" onChange={() => this.customUrlCheckClick('isCustomUrl')}></Form.Check>    
                             </Col>                  
                         </Row>  
-                        <Row className="justify-content-md-center mb-2 height_40px">
+                        <Row className="justify-content-md-center mb-2 ">
                             <Col xs lg="3">                                
                                 { this.state.isExpiryDate ? (<Datetime onChange={ this.handleDateChange} isValidDate= {this.validDate}/>) : <Datetime inputProps={{disabled: true}} />}                                  
                             </Col>  
@@ -162,7 +162,7 @@ class Content extends Component {
                                 <Form.Check label="Expiry Time" name="group1" type="checkbox" id="expiry_time" onChange={() => this.expiryDateCheckClick('expiryDateCheckClick')}></Form.Check>
                             </Col>                                
                         </Row>  
-                        <Row className="justify-content-md-center mb-4 height_40px">
+                        <Row className="justify-content-md-center mb-4 ">
                             <Col xs lg="3">
                                 { this.state.isPasswordEnabled ? (<Form.Control type="password" name="url_password" placeholder="password..." ></Form.Control>) : (<Form.Control type="custom_short_url" name="url_password" placeholder="password..." readOnly ></Form.Control>) }                                
                             </Col>  

@@ -1,3 +1,18 @@
+# Travel
+A URL Shortner app developed using ReactJS. This website is hosted on Netlify
+
+Website can be viewed on the following link: https://vakumar-urlshortner.netlify.app/
+
+### Technologies And Libaries Used
+   - React.js
+   - CSS
+   - HTML
+   - BootStrap
+   
+### Editor Used For Development   
+   - Visual Code
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

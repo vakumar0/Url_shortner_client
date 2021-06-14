@@ -6,7 +6,6 @@ import Datetime from 'react-datetime';
 import "react-datetime/css/react-datetime.css";
 import { Grid } from './Grid';
 import moment from 'moment';
-//import axios from 'axios';
 
 
 class Content extends Component {
@@ -64,7 +63,8 @@ class Content extends Component {
     }
 
     getAllURLS() {
-        fetch('http://127.0.0.1:8000/api/getAllURLs')
+        //fetch('http://127.0.0.1:8000/api/getAllURLs')
+        fetch('https://vakumar-urlshortner.herokuapp.com/api/getAllURLs')
         .then( response => response.json())
         .then( urls => this.setState({allURLS: urls}));
     }
@@ -97,7 +97,7 @@ class Content extends Component {
             })            
         }
         
-        fetch('http://127.0.0.1:8000/api/getShortUrl', info)
+        fetch('https://vakumar-urlshortner.herokuapp.com/api/getShortUrl', info)
         .then( response => response.json())
         .then( data => {
             console.log(data);
@@ -116,7 +116,7 @@ class Content extends Component {
     componentDidMount() {        
         var url = window.location.href;
         if(url.indexOf('?') !== -1) {
-            let openUrl = 'http://127.0.0.1:8000/' + url.replace('http://localhost:3000/?','');
+            let openUrl = 'https://vakumar-urlshortner.herokuapp.com/' + url.replace('https://vakumar-urlshortner.herokuapp.com/','');
             //let openUrl = window.location.origin + '/' + url.replace('http://localhost:3000/?','');
             fetch(openUrl)
             .then( response => response.json())

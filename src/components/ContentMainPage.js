@@ -148,7 +148,7 @@ class Content extends Component {
                         </Row>                     
                         <Row className="justify-content-md-center mb-2 height_40px">
                             <Col xs lg="3">
-                                { this.state.isCustomUrl ? (<Form.Control type="custom_short_url" name="custom_short_url" placeholder="url should start with => http://localhost:3000/?"></Form.Control>) : (<Form.Control type="custom_short_url" placeholder="Custom URL..." value={this.state.shortUrl} readOnly ></Form.Control>) }                                
+                                { this.state.isCustomUrl ? (<Form.Control type="custom_short_url" name="custom_short_url" placeholder="url should start with => https://vakumar-urlshortner.netlify.app/?"></Form.Control>) : (<Form.Control type="custom_short_url" placeholder="Custom URL..." value={this.state.shortUrl} readOnly ></Form.Control>) }                                
                             </Col>  
                             <Col md="auto">
                                 <Form.Check label="Custom Url" name="group1" type="checkbox" id="custom_url" onChange={() => this.customUrlCheckClick('isCustomUrl')}></Form.Check>    

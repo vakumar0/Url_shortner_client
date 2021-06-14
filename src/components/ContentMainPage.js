@@ -116,7 +116,7 @@ class Content extends Component {
     componentDidMount() {        
         var url = window.location.href;
         if(url.indexOf('?') !== -1) {
-            let openUrl = 'https://vakumar-urlshortner.herokuapp.com/' + url.replace('https://vakumar-urlshortner.herokuapp.com/','');
+            let openUrl = 'https://vakumar-urlshortner.herokuapp.com/' + url.replace('https://vakumar-urlshortner.netlify.app/?','');
             //let openUrl = window.location.origin + '/' + url.replace('http://localhost:3000/?','');
             fetch(openUrl)
             .then( response => response.json())

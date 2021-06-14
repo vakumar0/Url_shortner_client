@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.contentPage {
+  text-align: center;
+}
+
+.height_40px {
+  height: 40px;
+}
+
+.heading {
+  padding: 2rem;
+  text-align: center;
+}

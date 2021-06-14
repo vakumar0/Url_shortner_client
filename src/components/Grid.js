@@ -31,6 +31,8 @@ export const Grid = props => (
                                 <td>{data.expiry_time}</td>
                                 <td>{data.created_by}</td>
                                 <td>{data.created_on}</td>
+								<td>{data.action}</td>
+								<td>{data.modified_on}</td>
                             </tr>     
                         )
                     })

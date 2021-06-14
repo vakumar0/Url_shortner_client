@@ -93,7 +93,8 @@ class Content extends Component {
                 created_on: moment(currentTime).format("YYYY-MM-DD HH:mm:ss"),
                 is_custom_url: this.state.isCustomUrl,
                 custom_url: this.state.isCustomUrl ? event.target.custom_short_url.value : null,
-                origin: window.location.origin
+                origin: window.location.origin,
+                action: 'create'
             })            
         }
         

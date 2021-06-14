@@ -43,7 +43,7 @@ class Content extends Component {
     }
 
     handleDateChange(date) {
-        this.setState({expiryDate: date.format("YYYY-MM-DD hh:mm:ss")});
+        this.setState({expiryDate: date.format("YYYY-MM-DD HH:mm:ss")});
     }
 
     loggingCheckClick() {
@@ -90,7 +90,7 @@ class Content extends Component {
                 is_expiry_enabled: this.state.isExpiryDate,
                 expiry_time: this.state.isExpiryDate ? this.state.expiryDate :null,
                 created_by: this.state.ipAddress !== undefined? this.state.ipAddress: 'admin',
-                created_on: moment(currentTime).format("YYYY-MM-DD hh:mm:ss"),
+                created_on: moment(currentTime).format("YYYY-MM-DD HH:mm:ss"),
                 is_custom_url: this.state.isCustomUrl,
                 custom_url: this.state.isCustomUrl ? event.target.custom_short_url.value : null,
                 origin: window.location.origin
